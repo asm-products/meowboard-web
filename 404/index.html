@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>404</title>
+<link href="assets/css/reset.css" rel="stylesheet" type="text/css">
+<link href="assets/css/normalize.css" rel="stylesheet" type="text/css">
+<link type="text/css" rel="stylesheet" href=""/>
+ <style type="text/css">
+ @font-face {
+    font-family: 'Futura LT Bold';
+    src: url('assets/fonts/ufonts.com_futura_lt_bold_1_.eot');
+    src: url('assets/fonts/ufonts.com_futura_lt_bold_1_.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/ufonts.com_futura-lt-bold.woff') format('woff'),
+         url('assets/fonts/ufonts.com_futura-lt-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+</style>
+<style type="text/css">body{color:#efefef;font-family:'Helvetica', sans-serif;height:100%;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background-repeat:no-repeat;background-position:center center;background-attachment:fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;}html,body{height:100%;}a{color:#61d6ff;text-decoration:none;}.wrapper{margin:0 auto;display:table;width:500px;height:100%;text-align:center;font-family:'Helvetica', sans-serif;position:relative;}h1{font-family:'Futura LT Bold', sans-serif;letter-spacing:-1px;margin:0 0 30px 0;font-size:40px;}h2{font-size:18px;line-height:180%;margin:0 auto;}h1,h2,h3{font-weight:normal;text-shadow:0 1px 3px rgba(0,0,0,.75);}.inner{display:table-cell;vertical-align:middle;width:320px;}.shadow{display:block;}.gradient{background-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSIxMDAlIiB5MT0iNTAlIiB4Mj0iLTEuNDIxMDg1NDcxNTIwMmUtMTQlIiB5Mj0iNTAlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzg4M2RlNiIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjN2EyOGUxIiBzdG9wLW9wYWNpdHk9IjEiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDA2ZWNkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgPC9saW5lYXJHcmFkaWVudD4KCjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSJ1cmwoI2hhdDApIiAvPgo8L3N2Zz4=);background-image:-moz-linear-gradient(right,purple 0%,yellow 100%);background-image:-o-linear-gradient(right,purple 0%,yellow 100%);background-image:-webkit-linear-gradient(left,purple 0%,yellow 100%);background-image:linear-gradient(right,purple 0%,yellow 100%);opacity:0.4;position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;}.overlay{background:rgba(0,0,0,0.44);position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;}footer{position:absolute;bottom:30px;width:100%;left:0;text-align:center;text-shadow:0 1px 3px rgba(0,0,0,.75);font-size:14px;padding:0;line-height:14px;}footer span{margin:0 auto;padding-top: 5px;display:block;}footer img{width:50px; height:50px; margin-bottom: 10px; opacity: 0.8;};footer a{display:inline-block;}}</style>
+<body>
+<div class="gradient"></div>
+<div class="overlay"></div>
+<div class="wrapper">
+<div class="inner">
+<h1>MEOW! Page Not Found.</h1>
+<h2>This page got scratched.</h2>
+<h2>But while you're here, hit space bar to enjoy another cat GIF!</h2>
+</div>
+</div>
+<footer>
+<a href="https://assembly.com/meowboard" target="_blank"><img class="logo" src="https://d8izdk6bl4gbi.cloudfront.net/192x192/g_center/https://d1015h9unskp4y.cloudfront.net/attachments/9bbfc2ba-7d6a-4be6-9251-5e2685e3e61d/meowboard.png"></a>
+<span>&copy; Meowboard. It's meow or never.</span>
+<span>( page design inspired by <a href="http://twitter.com/mutlu82" target="_blank">@mutlu82</a> )</span>
+</footer>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    var a = 17; var b = Math.floor(Math.random()*a)+1;
+    $('body').css("background-image", "url(assets/gifs/"+b+".gif)");
+    $('body').keyup(function(e){
+        if(e.keyCode == 32){
+            b++; var url  = "url(assets/gifs/" + b + ".gif)";
+            $('body').css("background-image", url);
+            if(b >= a){ b = 0; }
+        }
+    });
+});
+</script>
+
+</body>
+</html>
